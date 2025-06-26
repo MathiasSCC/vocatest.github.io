@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Vocacional</title>
+    <link rel="icon" href="src/assets/images/favicon/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="src/styles/test.css">
+
+</head>
+<body>
+
+    <a href="index.html" class="back-home"><i class="fa-solid fa-house"></i></a>
+
+    <div class="main-layout">
+        <!-- Panel Izquierdo -->
+        <div class="side-panel" id="left-panel">
+            <h3><i class="fas fa-lightbulb"></i> Consejos</h3>
+            <div class="info-item">
+                <h4>Responde con honestidad</h4>
+                <p>No hay respuestas correctas o incorrectas. Responde según tus verdaderos intereses y preferencias.</p>
+            </div>
+            <div class="info-item">
+                <h4>Tómate tu tiempo</h4>
+                <p>Reflexiona sobre cada pregunta. Piensa en situaciones reales donde hayas disfrutado o destacado.</p>
+            </div>
+            <div class="info-item">
+                <h4>Sé auténtico</h4>
+                <p>Responde según lo que realmente te motiva, no según lo que otros esperan de ti.</p>
+            </div>
+            
+            <div class="stats-circle" id="completion-circle">0%</div>
+            <p style="text-align: center; color: #666; font-size: 0.9rem;">Progreso completado</p>
+        </div>
+
+        <!-- Contenedor Principal -->
+        <div class="container">
+            <div class="test-header">
+                <h1>Test Vocacional</h1>
+                <p>Descubre tu carrera ideal respondiendo estas preguntas</p>
+            </div>
+
+            <div id="test-container">
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                <div class="progress-text" id="progress-text">Pregunta 1 de 10</div>
+
+                <div class="question-card" id="question-card">
+                    <div class="question-number" id="question-number">Pregunta 1</div>
+                    <div class="question-text" id="question-text"></div>
+                    <div class="options-container" id="options-container"></div>
+                </div>
+
+                <div class="navigation">
+                    <button class="nav-btn" id="prev-btn" onclick="previousQuestion()" disabled>Anterior</button>
+                    <button class="nav-btn" id="next-btn" onclick="nextQuestion()" disabled>Siguiente</button>
+                </div>
+            </div>
+
+            <div class="results-container" id="results-container">
+                <div class="result-card">
+                    <h2 class="result-title" id="result-title"></h2>
+                    <p class="result-description" id="result-description"></p>
+                    
+                    <div class="result-stats" id="result-stats"></div>
+                    
+                    <div class="career-list" id="career-list"></div>
+                    
+                    <div class="recommendations" id="recommendations">
+                        <h3><i class="fas fa-star"></i> Recomendaciones para ti</h3>
+                        <div id="recommendation-list"></div>
+                    </div>
+                    
+                    <button class="restart-btn" onclick="restartTest()">Realizar Test Nuevamente</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel Derecho -->
+        <div class="side-panel" id="right-panel">
+            <h3><i class="fas fa-chart-bar"></i> Tu Progreso</h3>
+            <div id="category-progress">
+                <div class="category-indicator">
+                    <span>Ciencias</span>
+                    <div class="category-bar">
+                        <div class="category-fill" id="ciencias-fill"></div>
+                    </div>
+                    <span id="ciencias-count">0</span>
+                </div>
+                <div class="category-indicator">
+                    <span>Arte</span>
+                    <div class="category-bar">
+                        <div class="category-fill" id="arte-fill"></div>
+                    </div>
+                    <span id="arte-count">0</span>
+                </div>
+                <div class="category-indicator">
+                    <span>Social</span>
+                    <div class="category-bar">
+                        <div class="category-fill" id="social-fill"></div>
+                    </div>
+                    <span id="social-count">0</span>
+                </div>
+                <div class="category-indicator">
+                    <span>Negocios</span>
+                    <div class="category-bar">
+                        <div class="category-fill" id="negocios-fill"></div>
+                    </div>
+                    <span id="negocios-count">0</span>
+                </div>
+            </div>
+            
+            <div style="margin-top: 20px;">
+                <h3><i class="fas fa-info-circle"></i> ¿Sabías que?</h3>
+                <div class="info-item" id="fun-fact">
+                    <p>El test vocacional te ayuda a identificar patrones en tus intereses y habilidades naturales.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/test/questions.js"></script>
+    <script src="src/test/careerProfiles.js"></script>
+    <script src="src/scripts/test.js" ></script>
+
+</body>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VocaTest - Descubre tu vocación</title>
+    <link rel="icon" href="src/assets/images/favicon/logo.png" type="image/png">
+    
+    <link rel="stylesheet" href="src/styles/main.css">
+
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">VocaTest™</div>
+            <img src="src/assets/images/favicon/logo.png" alt="Logo VocaTest" class="logo-img">
+            <button class="nav-btn" onclick="startTest()">Realizar Test</button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>¡Descubre la carrera que más se ajusta a tu vocación!</h1>
+            <p>Nuestro test vocacional te ayudará a conocer mejor tus intereses, habilidades y valores, guiándote hacia la carrera que más te apasiona y se adapta a ti.</p>
+            <button class="hero-btn" onclick="scrollToTest()">Realizar Test</button>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <section class="cards-section">
+                <div class="cards-grid">
+                    <div class="card fade-in">
+                        <h3>¡Descubre tu vocación en minutos!</h3>
+                        <p>Con este test vocacional podrás encontrar la carrera que se alinea con tus intereses y fortalezas profesionales.</p>
+                    </div>
+                    <div class="card fade-in">
+                        <h3>Perspectivas que cambian tu futuro</h3>
+                        <div class="highlight">92%</div>
+                        <p>de los participantes han logrado encontrar una carrera más satisfactoria tras realizar nuestro test vocacional.</p>
+                    </div>
+                    <div class="card fade-in">
+                        <h3>Tu carrera ideal te espera</h3>
+                        <div class="highlight">30</div>
+                        <p><strong>preguntas</strong> diseñadas para identificar tus intereses, aptitudes y preferencias profesionales.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stats-section">
+                <div class="container">
+                    <h2>Test Vocacional: Resultados Reales</h2>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">92%</div>
+                            <div class="stat-label">Satisfacción</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">30</div>
+                            <div class="stat-label">Preguntas</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5min</div>
+                            <div class="stat-label">Duración</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="how-it-works">
+                <h2>¿Cómo funciona el test vocacional?</h2>
+                <div class="steps">
+                    <div class="step fade-in">
+                        <div class="step-number">1</div>
+                        <h3>Prepárate</h3>
+                        <p>Busca un lugar tranquilo donde puedas reflexionar sobre tus intereses y valores personales para dar respuestas honestas.</p>
+                    </div>
+                    <div class="step fade-in">
+                        <div class="step-number">2</div>
+                        <h3>Realiza el test</h3>
+                        <p>Responde a 30 preguntas diseñadas para evaluar tus preferencias, habilidades y aspiraciones profesionales.</p>
+                    </div>
+                    <div class="step fade-in">
+                        <div class="step-number">3</div>
+                        <h3>Recibe tus resultados</h3>
+                        <p>Descubre las carreras que mejor se adaptan a tu perfil y las oportunidades que puedes explorar para tu futuro profesional.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section" id="test-section">
+                <div class="container">
+                    <h2>Iniciar test vocacional</h2>
+                    <p style="margin-bottom: 30px; font-size: 1.1rem;">Descubre qué carrera es la más adecuada para ti y da el primer paso hacia tu futuro profesional</p>
+                    <button class="cta-btn" onclick="startTest()">Comenzar Test Ahora</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 VocaTest™. Todos los derechos reservados</p>
+            <div class="container-logos">
+                <img src="src/assets/images/favicon/logo.png" alt="Logo VocaTest" class="footer-logo">
+                <img src="src/assets/images/logo/logo-iee_alfonso_ugarte.png" alt="Logo IEE Alfonso Ugarte" class="footer-logo">
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/scripts/main.js"></script>
+
+</body>
+</html>
